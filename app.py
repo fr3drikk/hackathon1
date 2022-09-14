@@ -13,7 +13,7 @@ st.title('Shark attacks - GROUP 3 BABY')
 
 data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/main/attacks.csv', encoding='iso8859-1')
 
-tab1, tab2, tab3 = st.tabs(["Pie, Map, Line"])
+tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
 
 
 data.isna().sum()
