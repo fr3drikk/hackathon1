@@ -126,7 +126,6 @@ with tab1:
    st.header("Two Pie Charts")
    st.plotly_chart(gender_fig, use_container_width=True)
    st.plotly_chart(fatality_fig, use_container_width=True)
-   st.button(f"Click Me 🦈", on_click=random_emoji)
 
 
 with st.sidebar:
@@ -141,6 +140,8 @@ with st.sidebar:
     "Alpha"
     "Sadishka"
     "Jannatul"
+    st.button(f"Click Me {st.session_state.emoji}", on_click=random_emoji)
+
 
 with tab2:
     st.header("A Map")
