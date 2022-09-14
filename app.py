@@ -119,7 +119,7 @@ st.set_page_config(page_title='Do sharks discriminate - Dashboard',
 st.title('🦈 SHARK ATTACKZ 🦈')
 
 
-tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
+tab1, tab2, tab3, tab4 = st.tabs(["Pie", "Map", "Line, Sharks"])
 
 
 with tab1:
@@ -150,3 +150,8 @@ with tab3:
     st.header("Two Line Charts")
     st.plotly_chart(activity_fig, use_container_width=True)
     st.plotly_chart(year_fig, use_container_width=True)
+
+with tab4:
+    st.header("Sharks In Action")
+    st.image("https://www.gannett-cdn.com/presto/2021/07/14/NPOH/32c7c45d-5abc-49e5-aa81-71633454f748-greatwhiteshark.jpg?crop=4551,2560,x0,y421&width=3200&height=1801&format=pjpg&auto=webp")
+    
