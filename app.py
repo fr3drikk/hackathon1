@@ -113,9 +113,10 @@ world_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 world_map.show()
 
 st.set_page_config(page_title='Do sharks discriminate - Dashboard',
+                    page_icon="🦈"
                     layout='wide')
 
-st.title('SHARK ATTACKZ')
+st.title('🦈 SHARK ATTACKZ 🦈')
 
 
 tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
@@ -125,7 +126,9 @@ with tab1:
    st.header("Two Pie Charts")
    st.plotly_chart(gender_fig, use_container_width=True)
    st.plotly_chart(fatality_fig, use_container_width=True)
-   
+   st.button(f"Click Me 🦈", on_click=random_emoji)
+
+
 with st.sidebar:
     add_radio = st.radio(
         "Choose a shark attack",
