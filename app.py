@@ -14,7 +14,7 @@ st.title('Shark attacks - GROUP 3 BABY')
 data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/main/attacks.csv', encoding='iso8859-1')
 
 
-ata.info()
+data.info()
 
 data.isna().sum()
 
