@@ -153,8 +153,8 @@ with tab3:
 
 with tab4:
     st.header("Sharks In Action")
-    #st.image("https://www.gannett-cdn.com/presto/2021/07/14/NPOH/32c7c45d-5abc-49e5-aa81-71633454f748-greatwhiteshark.jpg?crop=4551,2560,x0,y421&width=3200&height=1801&format=pjpg&auto=webp")
-    def carousel_shark():
+    st.image("https://www.gannett-cdn.com/presto/2021/07/14/NPOH/32c7c45d-5abc-49e5-aa81-71633454f748-greatwhiteshark.jpg?crop=4551,2560,x0,y421&width=3200&height=1801&format=pjpg&auto=webp")
+    #def carousel_shark():
 
         imageCarouselComponent = components.declare_component("image-carousel-component", path="frontend/public")
 
@@ -170,12 +170,7 @@ with tab4:
         if selectedImageUrl is not None:
             st.image(selectedImageUrl)
 
-    if __name__ == "__carousel_shark__":
+    #if __name__ == "__carousel_shark__":
         carousel_shark()
 
-
-
-    
-    
-    
     st.video("https://www.youtube.com/watch?v=Jo4CLJZwS94&ab_channel=FreeDocumentary-Animals")
