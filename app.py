@@ -24,7 +24,6 @@ data.drop(['Case Number', 'Name', 'Injury', 'Time', 'Investigator or Source', 'p
 
 data = data.rename(columns = {'Sex ':'Gender'})
 
-data.Gender.unique()
 
 # sort the unique values in column Gender into three categories: Female, Male and Unknown
 
@@ -70,7 +69,6 @@ len(data["Activity"].unique())
 data.Activity.value_counts().head(10)
 
 ## TYPE
-data.Type.unique()
 
 # Here making only 1 type, ALlType, so not 9 different provoked unprovked ETC.
 
