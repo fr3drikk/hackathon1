@@ -131,14 +131,13 @@ with st.sidebar:
         "Choose a shark attack",
         ("Standard (non-fatal)", "Extreme (fatal)")
     )
-    "Done by Group 3
-    Nadia
-    Fredrik
-    Jakob
-    Alpha
-    Sadishka
-    Jannatul
-    "
+    "Done by Group 3"
+    "Nadia"
+    "Fredrik"
+    "Jakob"
+    "Alpha"
+    "Sadishka"
+    "Jannatul"
 
 with tab2:
     st.header("A Map")
