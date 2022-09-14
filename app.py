@@ -156,9 +156,9 @@ with tab4:
     st.image("https://www.gannett-cdn.com/presto/2021/07/14/NPOH/32c7c45d-5abc-49e5-aa81-71633454f748-greatwhiteshark.jpg?crop=4551,2560,x0,y421&width=3200&height=1801&format=pjpg&auto=webp")
     #def carousel_shark():
 
-        imageCarouselComponent = components.declare_component("image-carousel-component", path="frontend/public")
+        #imageCarouselComponent = components.declare_component("image-carousel-component", path="frontend/public")
 
-        imageUrls = [
+        #imageUrls = [
             "https://www.gannett-cdn.com/presto/2021/07/14/NPOH/32c7c45d-5abc-49e5-aa81-71633454f748-greatwhiteshark.jpg?crop=4551,2560,x0,y421&width=3200&height=1801&format=pjpg&auto=webp"
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFdM8Gq3PfOkhgEZGu9m9R0gCa261_6iYW7w&usqp=CAU"
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvWAl8W2rjbKryJHxFhaWLfZeGC9J0Uk8U3g&usqp=CAU" 
@@ -166,8 +166,8 @@ with tab4:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTte-ZrZNkQg67-MVu8Zl8CBM8JlI6zCB0Wpw&usqp=CAU"
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0SHI_1j4zF3OpDr9f9WXGzEhAEo5TEHWfog&usqp=CAU"
         ]
-        selectedImageUrl = imageCarouselComponent(imageUrls=imageUrls, height=200)
-        if selectedImageUrl is not None:
+        #selectedImageUrl = imageCarouselComponent(imageUrls=imageUrls, height=200)
+        i#f selectedImageUrl is not None:
             st.image(selectedImageUrl)
 
     #if __name__ == "__carousel_shark__":
