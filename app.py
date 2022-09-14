@@ -165,7 +165,7 @@ with tab4:
             #"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR9XBB2Zl23vJaOl3PebyKJB-symuQWplEPQ&usqp=CAU"           
             #"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTte-ZrZNkQg67-MVu8Zl8CBM8JlI6zCB0Wpw&usqp=CAU"
             #"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0SHI_1j4zF3OpDr9f9WXGzEhAEo5TEHWfog&usqp=CAU"
-        ]
+       # ]
         #selectedImageUrl = imageCarouselComponent(imageUrls=imageUrls, height=200)
         i#f selectedImageUrl is not None:
             st.image(selectedImageUrl)
