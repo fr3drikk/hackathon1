@@ -167,7 +167,7 @@ with tab4:
             #"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0SHI_1j4zF3OpDr9f9WXGzEhAEo5TEHWfog&usqp=CAU"
        # ]
         #selectedImageUrl = imageCarouselComponent(imageUrls=imageUrls, height=200)
-        i#f selectedImageUrl is not None:
+        #i#f selectedImageUrl is not None:
             st.image(selectedImageUrl)
 
     #if __name__ == "__carousel_shark__":
