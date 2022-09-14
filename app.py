@@ -168,9 +168,9 @@ with tab4:
        # ]
         #selectedImageUrl = imageCarouselComponent(imageUrls=imageUrls, height=200)
         #i#f selectedImageUrl is not None:
-            st.image(selectedImageUrl)
+            #st.image(selectedImageUrl)
 
     #if __name__ == "__carousel_shark__":
-        carousel_shark()
+        #carousel_shark()
 
     st.video("https://www.youtube.com/watch?v=Jo4CLJZwS94&ab_channel=FreeDocumentary-Animals")
