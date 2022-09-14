@@ -121,7 +121,6 @@ st.title('🦈 SHARK ATTACKZ 🦈')
 
 tab1, tab2, tab3, tab4 = st.tabs(["Pie", "Map", "Line", "Sharks"])
 
-https://wallpaper.dog/large/5478970.jpg
 def add_bg_from_url():
     st.markdown(
          f"""
