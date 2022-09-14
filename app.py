@@ -1,4 +1,4 @@
 
 import streamlit as st
 
-st.title('Group 3')
+st.title('Shark attacks - GROUP 3 BABY')
