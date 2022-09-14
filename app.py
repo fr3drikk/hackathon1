@@ -140,7 +140,6 @@ with st.sidebar:
     "Alpha"
     "Sadishka"
     "Jannatul"
-    st.button(f"Click Me {st.session_state.emoji}", on_click=random_emoji)
 
 
 with tab2:
