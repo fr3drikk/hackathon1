@@ -1,4 +1,3 @@
-st.title('Shark attacks - GROUP 3 BABY')
 
 
 import streamlit as st
@@ -8,6 +7,9 @@ import matplotlib.pyplot as plt # comand for ploting
 import seaborn as sns; sns.set() # this is a data visualization library built on top of matplotlib
 from matplotlib.patches import ConnectionPatch # using this for later when zooming
 import plotly.express as px # Plotly plots
+
+st.title('Shark attacks - GROUP 3 BABY')
+
 
 data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/main/attacks.csv', encoding='iso8859-1')
 
