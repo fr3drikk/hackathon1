@@ -121,6 +121,22 @@ st.title('🦈 SHARK ATTACKZ 🦈')
 
 tab1, tab2, tab3, tab4 = st.tabs(["Pie", "Map", "Line", "Sharks"])
 
+https://wallpaper.dog/large/5478970.jpg
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://wallpaper.dog/large/5478970.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
 
 with tab1:
    st.header("Two Pie Charts")
