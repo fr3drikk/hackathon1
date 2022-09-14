@@ -82,7 +82,7 @@ Mydata.drop([4],inplace=True)
 Mydata.drop([6],inplace=True)
 
 import plotly.express as px
-mlabels=['Male Non Fatal', 'Male fatael','Female Non Fatal','Female Fatal']
+mlabels=['Male Non Fatal', 'Male Fatal','Female Non Fatal','Female Fatal']
 fatality_fig = px.pie(Mydata, names=mlabels,values='size',hole = 0.8)
 fatality_fig.update_traces(textposition='outside', textinfo='percent+label')
 fatality_fig.update_layout(
@@ -122,14 +122,14 @@ tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
 
 
 with tab1:
-   st.header("A Pie")
+   st.header("Two Pie Charts")
    st.plotly_chart(gender_fig, use_container_width=True)
    st.plotly_chart(fatality_fig, use_container_width=True)
    
 with st.sidebar:
     add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
+        "Choose a shark attack",
+        ("Standard (non-fatal)", "Extreme (fatal)")
     )
 
 with tab2:
@@ -137,6 +137,6 @@ with tab2:
     st.plotly_chart(world_map, use_container_width=True)
 
 with tab3:
-    st.header("A Line Chart")
+    st.header("Two Line Charts")
     st.plotly_chart(activity_fig, use_container_width=True)
     st.plotly_chart(year_fig, use_container_width=True)
