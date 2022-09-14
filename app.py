@@ -115,7 +115,7 @@ world_map.show()
 st.set_page_config(page_title='Do sharks discriminate - Dashboard',
                     layout='wide')
 
-st.title('Sharkz Attacks')
+st.title('SHARK ATTACKZ')
 
 
 tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
@@ -131,6 +131,14 @@ with st.sidebar:
         "Choose a shark attack",
         ("Standard (non-fatal)", "Extreme (fatal)")
     )
+    "Done by Group 3
+    Nadia
+    Fredrik
+    Jakob
+    Alpha
+    Sadishka
+    Jannatul
+    "
 
 with tab2:
     st.header("A Map")
