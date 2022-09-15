@@ -195,52 +195,11 @@ with tab4:
 
     st.video("https://www.youtube.com/watch?v=Jo4CLJZwS94&ab_channel=FreeDocumentary-Animals")
 
-#with tab5:
+with tab5:
+    st.header("HEYY")
 
 #byYear_attack = data.groupby('Year')['Date'].count().reset_index()
 #year_fig = px.line(byYear_attack,x='Year', y='Date', title='Shark Attack by Year')
 #year_fig.show()
    
-   # Create figure
-    fig_year = go.Figure()
-
-    fig_year.add_trace(
-        go.Scatter(x=list(data.Year), y=list(data.Date)))
-
-# Set title
-    fig_year.update_layout(
-        title_text="Time series with range slider and selectors"
-    )
-
-# Add range slider
-    fig_year.update_layout(
-        xaxis=dict(
-            rangeselector=dict(
-                buttons=list([
-                    dict(count=1,
-                         label="1m",
-                        step="month",
-                        stepmode="backward"),
-                    dict(count=6,
-                        label="6m",
-                        step="month",
-                        stepmode="backward"),
-                    dict(count=1,
-                        label="YTD",
-                        step="year",
-                        stepmode="todate"),
-                    dict(count=1,
-                        label="1y",
-                        step="year",
-                        stepmode="backward"),
-                    dict(step="all")
-                ])
-            ),
-            rangeslider=dict(
-                visible=True
-            ),
-            type="date"
-        )
-    )
-
-    fig_year.show()
+  
