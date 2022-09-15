@@ -201,18 +201,18 @@ with tab5:
 #year_fig.show()
    
    # Create figure
-fig = go.Figure()
+fig_year = go.Figure()
 
-fig.add_trace(
+fig_year.add_trace(
     go.Scatter(x=list(data.Year), y=list(data.Date)))
 
 # Set title
-fig.update_layout(
+fig_year.update_layout(
     title_text="Time series with range slider and selectors"
 )
 
 # Add range slider
-fig.update_layout(
+fig_year.update_layout(
     xaxis=dict(
         rangeselector=dict(
             buttons=list([
@@ -242,4 +242,4 @@ fig.update_layout(
     )
 )
 
-fig.show()
+fig_year.show()
