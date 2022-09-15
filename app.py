@@ -201,7 +201,7 @@ with tab5:
 #year_fig.show()
    
    # Create figure
-    fig_year = go.Figure()
+fig_year = go.Figure()
 
     fig_year.add_trace(
         go.Scatter(x=list(data.Year), y=list(data.Date)))
