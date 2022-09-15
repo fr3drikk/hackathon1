@@ -201,45 +201,45 @@ with tab5:
 #year_fig.show()
    
    # Create figure
-fig_year = go.Figure()
+    fig_year = go.Figure()
 
-fig_year.add_trace(
-    go.Scatter(x=list(data.Year), y=list(data.Date)))
+    fig_year.add_trace(
+        go.Scatter(x=list(data.Year), y=list(data.Date)))
 
 # Set title
-fig_year.update_layout(
-    title_text="Time series with range slider and selectors"
-)
+    fig_year.update_layout(
+        title_text="Time series with range slider and selectors"
+    )
 
 # Add range slider
-fig_year.update_layout(
-    xaxis=dict(
-        rangeselector=dict(
-            buttons=list([
-                dict(count=1,
-                     label="1m",
-                     step="month",
-                     stepmode="backward"),
-                dict(count=6,
-                     label="6m",
-                     step="month",
-                     stepmode="backward"),
-                dict(count=1,
-                     label="YTD",
-                     step="year",
-                     stepmode="todate"),
-                dict(count=1,
-                     label="1y",
-                     step="year",
-                     stepmode="backward"),
-                dict(step="all")
-            ])
-        ),
-        rangeslider=dict(
-            visible=True
-        ),
-        type="date"
+    fig_year.update_layout(
+        xaxis=dict(
+            rangeselector=dict(
+                buttons=list([
+                    dict(count=1,
+                         label="1m",
+                        step="month",
+                        stepmode="backward"),
+                    dict(count=6,
+                        label="6m",
+                        step="month",
+                        stepmode="backward"),
+                    dict(count=1,
+                        label="YTD",
+                        step="year",
+                        stepmode="todate"),
+                    dict(count=1,
+                        label="1y",
+                        step="year",
+                        stepmode="backward"),
+                    dict(step="all")
+                ])
+            ),
+            rangeslider=dict(
+                visible=True
+            ),
+            type="date"
+        )
     )
-)
 
-fig_year.show()
+    fig_year.show()
