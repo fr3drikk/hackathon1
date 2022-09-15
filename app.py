@@ -219,8 +219,8 @@ with tab5:
     ]
         selectedImageUrl = imageCarouselComponent(imageUrls=imageUrls, height=200)
 
-    if selectedImageUrl is not None:
-        st.image(selectedImageUrl)
+        if selectedImageUrl is not None:
+            st.image(selectedImageUrl)
 
 if __name__ == "__main__":
     main()
