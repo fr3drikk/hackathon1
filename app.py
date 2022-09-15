@@ -169,6 +169,7 @@ with tab3:
     st.plotly_chart(year_fig, use_container_width=True)
     x = st.slider("Year 1950-2018", value=50)
     st.write("Slider year:", x)
+
 with tab4:
     st.header("Sharks In Action")
     st.image("https://www.gannett-cdn.com/presto/2021/07/14/NPOH/32c7c45d-5abc-49e5-aa81-71633454f748-greatwhiteshark.jpg?crop=4551,2560,x0,y421&width=3200&height=1801&format=pjpg&auto=webp")
@@ -195,3 +196,18 @@ with tab4:
 
 with tab5:
     st.header("TEST TAB")
+
+byYear_attack = data.groupby('Year')['Date'].count().reset_index()
+year_fig = px.line(byYear_attack,x='Year', y='Date', title='Shark Attack by Year', animation_frame="Year", animation_group="Year",
+            size="date", hover_name="year",
+            log_x=True, size_max=55, range_x=[1950,2018], range_y=[0,140])
+year_fig["layout"].pop("updatemenus")
+year_fig.show()
+
+    #df = px.data.gapminder()
+#fig = px.scatter(df, x="gdpPercap", y="lifeExp", animation_frame="year", animation_group="country",
+           #size="pop", color="continent", hover_name="country",
+           #log_x=True, size_max=55, range_x=[100,100000], range_y=[25,90])
+
+#fig["layout"].pop("updatemenus") # optional, drop animation buttons
+#fig.show()
