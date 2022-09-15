@@ -11,7 +11,7 @@ data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/m
 
 data.isna().sum()
 
-data.drop(['Case Number', 'Name', 'Injury', 'Time', 'Investigator or Source', 'pdf', 'href formula', 'href', 'Case Number.1', 'Case Number.2', 'original order', 'Unnamed: 22', 'Unnamed: 23'], axis = 1, inplace = True)
+data.drop(['Case Number', 'Name', 'Injury', 'Time', 'Investigator or Source', 'pdata', 'href formula', 'href', 'Case Number.1', 'Case Number.2', 'original order', 'Unnamed: 22', 'Unnamed: 23'], axis = 1, inplace = True)
 
 
 # remove the space in the column name for better syntax and readability
@@ -195,19 +195,51 @@ with tab4:
     st.video("https://www.youtube.com/watch?v=Jo4CLJZwS94&ab_channel=FreeDocumentary-Animals")
 
 with tab5:
-    st.header("TEST TAB")
 
-byYear_attack = data.groupby('Year')['Date'].count().reset_index()
-year_fig = px.line(byYear_attack,x='Year', y='Date', title='Shark Attack by Year', animation_frame="Year", animation_group="Year",
-            size="date", hover_name="year",
-            log_x=True, size_max=55, range_x=[1950,2018], range_y=[0,140])
-year_fig["layout"].pop("updatemenus")
-year_fig.show()
+#byYear_attack = data.groupby('Year')['Date'].count().reset_index()
+#year_fig = px.line(byYear_attack,x='Year', y='Date', title='Shark Attack by Year')
+#year_fig.show()
+   
+   # Create figure
+fig = go.Figure()
 
-    #df = px.data.gapminder()
-#fig = px.scatter(df, x="gdpPercap", y="lifeExp", animation_frame="year", animation_group="country",
-           #size="pop", color="continent", hover_name="country",
-           #log_x=True, size_max=55, range_x=[100,100000], range_y=[25,90])
+fig.add_trace(
+    go.Scatter(x=list(data.Year), y=list(data.Date)))
 
-#fig["layout"].pop("updatemenus") # optional, drop animation buttons
-#fig.show()
+# Set title
+fig.update_layout(
+    title_text="Time series with range slider and selectors"
+)
+
+# Add range slider
+fig.update_layout(
+    xaxis=dict(
+        rangeselector=dict(
+            buttons=list([
+                dict(count=1,
+                     label="1m",
+                     step="month",
+                     stepmode="backward"),
+                dict(count=6,
+                     label="6m",
+                     step="month",
+                     stepmode="backward"),
+                dict(count=1,
+                     label="YTD",
+                     step="year",
+                     stepmode="todate"),
+                dict(count=1,
+                     label="1y",
+                     step="year",
+                     stepmode="backward"),
+                dict(step="all")
+            ])
+        ),
+        rangeslider=dict(
+            visible=True
+        ),
+        type="date"
+    )
+)
+
+fig.show()
