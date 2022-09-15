@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns; sns.set()
 from matplotlib.patches import ConnectionPatch
 import plotly.express as px
+import plotly.graph_objects as go
+
 
 data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/main/attacks.csv', encoding='iso8859-1')
 
@@ -201,7 +203,7 @@ with tab5:
 #year_fig.show()
    
    # Create figure
-fig_year = go.Figure()
+    fig_year = go.Figure()
 
     fig_year.add_trace(
         go.Scatter(x=list(data.Year), y=list(data.Date)))
